@@ -13,7 +13,7 @@ gulp.task('default', function(done) {
     //Answers
     var prompts = [{
         name: 'appName',
-        message: 'What the name of project?'
+        message: 'What the name of plugin?'
     }, {
         name: 'appDescription',
         message: 'What the description?'
@@ -23,7 +23,7 @@ gulp.task('default', function(done) {
         default: '0.1.0'
     }, {
         name: 'appAuthor',
-        message: 'Name of author?'
+        message: 'Name of author (Github user)?'
     }, {
         name: 'appEmail',
         message: 'Author e-mail?'

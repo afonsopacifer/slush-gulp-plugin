@@ -5,7 +5,7 @@ const PluginError = require('gulp-util').PluginError;
 
 const pluginName = 'gulp-plugin';
 
-module.exports = (opts = {}) => {
+module.exports = () => {
 
   return through.obj((file, enc, cb) => {
 
@@ -18,7 +18,11 @@ module.exports = (opts = {}) => {
     }
 
     if (file.isBuffer()) {
-      return cb(new PluginError(pluginName, 'Buffers not supported!'));
+
+      const newContent = file.contents.toString();
+      file.contents = new Buffer(newContent);
+
+      cb(null, file);
     }
 
   });

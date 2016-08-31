@@ -1,6 +1,6 @@
 const assert = require('assert');
 const File = require('vinyl');
-const banana = require('../');
+const plugin = require('../');
 
 describe('', () => {
 
@@ -10,7 +10,7 @@ describe('', () => {
       contents:  new Buffer('text content'),
     });
 
-    const stream = pluginName();
+    const stream = plugin();
 
     stream.write(fakeFile);
 

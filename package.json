@@ -1,5 +1,5 @@
 {
-  "name": "slush-gulp-plugins",
+  "name": "slush-gulp-plugin",
   "version": "0.1.0",
   "description": "A slush generator for gulp plugins.",
   "main": "slushfile.js",

@@ -31,36 +31,29 @@ $ slush gulp-plugin
 
 
 
-## The generated boilerplate
-
-Stack based in NodeJS:
-
-- Generator: [Slush](http://slushjs.github.io/#/)
-- CSS Superset: [BananaCSS](https://github.com/bananacss/bananacss)
-- CSS Reset: [Normalize](https://necolas.github.io/normalize.css/)
+## Plugin structure
 
 Folders Structure:
 
 	.
 	├── README.md
-	├── app/
-	|   ├── scripts/
-	|   ├── styles/
-	|   |   ├── css/
-	|   |   └── bnn/
-	|   |       ├── modules/
-	|   |       └── main.bnn
-	|   └── index.html
+	├── test/
+	|   └── index.js
+	├── index.js
 	├── package.json
-	└── .gitignore
+	├── .travis.yml
+	├── .eslintrc.json
+	├── .editorconfig
+	├── .gitignore
+	├── LICENSE.md
+	├── CONTRIBUTING.md
+	└── README.md
 
 Automatic Tasks:
 
-- `$ npm start`: Watch the .bnn files to build and start a static server.
-
-
-
-
+- `$ npm run eslint`: Validate the code style with [ESLint](http://eslint.org/)
+- `$ npm test`: Run the unit tests with [mocha](https://mochajs.org/)
+- `$ npm run cover`: Calculate the coverage with [Istanbul](https://gotwarlost.github.io/istanbul/)
 
 ## Versioning
 
